@@ -1,0 +1,918 @@
+%implements s160_b0_7p5pq_ZeroCrossings "C"
+
+%function ZeroCrossings(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+ZCV *_rtZCSV;
+%closefile localVarDecl
+%assign _modelSS = ""
+
+%assign tlcZeroCrossingsFcnOfS133B8 = OpaqueTLCBlockFcn("ZeroCrossings", 133, 8, 1, 8, 0)
+%assign tlcZeroCrossingsFcnOfS133B1885 = OpaqueTLCBlockFcn("ZeroCrossings", 133, 1885, 1, 8, 1)
+%<SLibCG_TrackZCSV(133)>\
+_rtZCSV = %<(SLibCG_SE(SLibGetZCSignalValueStrucPtr()))>;
+%<tlcZeroCrossingsFcnOfS133B8>\
+_rtZCSV->codt4rmrlm = 0.0;
+if (rtB.ivqf0ecqx4 > 0.0) {
+    _rtZCSV->codt4rmrlm = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 9)>\
+if (rtDW.ptnrjd13gg == 0) {
+    _rtZCSV->htulpqvlrr = rtB.h0p2qngujh - rtP.DeadZone_Start;
+    _rtZCSV->iizcz2feav = rtB.h0p2qngujh - rtP.DeadZone_End;
+}
+_rtZCSV->a0jprl4ij0 = 0.0;
+if (rtB.ngvjtv1xr2 > 0.0) {
+    _rtZCSV->a0jprl4ij0 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 32)>\
+if (rtDW.boyyc1bdww == 0) {
+    _rtZCSV->f5151mmot3 = rtB.oo2sxw55mk - rtP.DeadZone_Start_kkukvinkwq;
+    _rtZCSV->orjet1a2jc = rtB.oo2sxw55mk - rtP.DeadZone_End_eh2n0jcomn;
+}
+_rtZCSV->paimrpxe5y = 0.0;
+if (rtB.lgd0bou4eh > 0.0) {
+    _rtZCSV->paimrpxe5y = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 55)>\
+if (rtDW.ptfjeubvng == 0) {
+    _rtZCSV->lsokpjswth = rtB.nnc5b2dkae - rtP.DeadZone_Start_ooelvcrdcq;
+    _rtZCSV->mnoavka1xg = rtB.nnc5b2dkae - rtP.DeadZone_End_ij25lyaech;
+}
+_rtZCSV->djlfmssqux = 0.0;
+if (rtB.ojnl5ryzfi > 0.0) {
+    _rtZCSV->djlfmssqux = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 78)>\
+if (rtDW.hhwu4d1bvz == 0) {
+    _rtZCSV->fuwdp21w35 = rtB.icgiohxbiq - rtP.DeadZone_Start_f1ofclguhi;
+    _rtZCSV->mkgfzpzslg = rtB.icgiohxbiq - rtP.DeadZone_End_nb3ohqwc1q;
+}
+_rtZCSV->pngiqfc2oj = 0.0;
+if (rtB.cit1ugapso > 0.0) {
+    _rtZCSV->pngiqfc2oj = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 103)>\
+if (rtDW.lrddobh0op == 0) {
+    _rtZCSV->fvcpqusfie = rtB.puowytdozh - rtP.DeadZone_Start_p5xzfwmx4s;
+    _rtZCSV->dminxvhpfi = rtB.puowytdozh - rtP.DeadZone_End_p1nmafy045;
+}
+_rtZCSV->evgdsnscoi = 0.0;
+if (rtB.jtvahngxb2 > 0.0) {
+    _rtZCSV->evgdsnscoi = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 126)>\
+if (rtDW.baremoaf34 == 0) {
+    _rtZCSV->fn3njsdrja = rtB.bgj242ibno - rtP.DeadZone_Start_kphg2s2n0i;
+    _rtZCSV->c3ra322rer = rtB.bgj242ibno - rtP.DeadZone_End_oz4x4zxtu5;
+}
+_rtZCSV->ehvbciqg5y = 0.0;
+if (rtB.lmt1mj2dwm > 0.0) {
+    _rtZCSV->ehvbciqg5y = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 149)>\
+if (rtDW.boi0pjd2vl == 0) {
+    _rtZCSV->e2ecuoikbq = rtB.bxzbgaigcy - rtP.DeadZone_Start_oywg2ldjbb;
+    _rtZCSV->gc4brjnuqc = rtB.bxzbgaigcy - rtP.DeadZone_End_ph13yyli1m;
+}
+_rtZCSV->edmybvnyqg = 0.0;
+if (rtB.cge3bjjqmb > 0.0) {
+    _rtZCSV->edmybvnyqg = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 172)>\
+if (rtDW.kttky0hqet == 0) {
+    _rtZCSV->jmmv5uywqy = rtB.gfxos3awgm - rtP.DeadZone_Start_no2gx2u1n3;
+    _rtZCSV->n1zicbrlvf = rtB.gfxos3awgm - rtP.DeadZone_End_h3bjosk4sy;
+}
+_rtZCSV->f2bvgq5euk = 0.0;
+if (rtB.nurvx1q3xg > 0.0) {
+    _rtZCSV->f2bvgq5euk = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 197)>\
+if (rtDW.h51lbzudvr == 0) {
+    _rtZCSV->f3uspop4t3 = rtB.pinya1cww3 - rtP.DeadZone_Start_fm12etfsol;
+    _rtZCSV->css4iugxtz = rtB.pinya1cww3 - rtP.DeadZone_End_efx5nzypqt;
+}
+_rtZCSV->djtwd4ybtx = 0.0;
+if (rtB.kflyqmqgts > 0.0) {
+    _rtZCSV->djtwd4ybtx = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 220)>\
+if (rtDW.gsk222szey == 0) {
+    _rtZCSV->oo3rsv22xx = rtB.lrb5gdmb52 - rtP.DeadZone_Start_fsfsaqzptc;
+    _rtZCSV->mlhlszix2j = rtB.lrb5gdmb52 - rtP.DeadZone_End_lmzwogj2np;
+}
+_rtZCSV->ixxpmyjnj3 = 0.0;
+if (rtB.kndwlqyzm3 > 0.0) {
+    _rtZCSV->ixxpmyjnj3 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 243)>\
+if (rtDW.pn5o3usswp == 0) {
+    _rtZCSV->gilnqpjymp = rtB.jab311xc3a - rtP.DeadZone_Start_o4pvd1qeyh;
+    _rtZCSV->pfjnk1wfqt = rtB.jab311xc3a - rtP.DeadZone_End_pqukzd02pr;
+}
+_rtZCSV->bdqqdbhknl = 0.0;
+if (rtB.isduy253qg > 0.0) {
+    _rtZCSV->bdqqdbhknl = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 266)>\
+if (rtDW.dhpp113wr0 == 0) {
+    _rtZCSV->pue0ifezgl = rtB.neubbpreh2 - rtP.DeadZone_Start_gio12ijeim;
+    _rtZCSV->mjbdd3qg5u = rtB.neubbpreh2 - rtP.DeadZone_End_mt323wzmmb;
+}
+_rtZCSV->hsrdllvvpj = 0.0;
+if (rtB.h0egs3sltj > 0.0) {
+    _rtZCSV->hsrdllvvpj = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 291)>\
+if (rtDW.ii1fdiwqb4 == 0) {
+    _rtZCSV->kl4klotwti = rtB.obfwtngbx0 - rtP.DeadZone_Start_i330sh3x5w;
+    _rtZCSV->b1a35nb3ak = rtB.obfwtngbx0 - rtP.DeadZone_End_htfycmyhra;
+}
+_rtZCSV->puhzovfoh0 = 0.0;
+if (rtB.mb3ix4w2nm > 0.0) {
+    _rtZCSV->puhzovfoh0 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 314)>\
+if (rtDW.bg4hw450cb == 0) {
+    _rtZCSV->gg1js54hsn = rtB.k5ausiwlxo - rtP.DeadZone_Start_imd52gjoku;
+    _rtZCSV->o01fjexbwq = rtB.k5ausiwlxo - rtP.DeadZone_End_ndb14b4hvd;
+}
+_rtZCSV->oyjl5fesjw = 0.0;
+if (rtB.gpfopqz0yv > 0.0) {
+    _rtZCSV->oyjl5fesjw = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 337)>\
+if (rtDW.c0gn2jvjbu == 0) {
+    _rtZCSV->ibsr43nzy5 = rtB.dnbwvgndb0 - rtP.DeadZone_Start_i2dg1eqkuv;
+    _rtZCSV->d5j40bg0rz = rtB.dnbwvgndb0 - rtP.DeadZone_End_frb0l2wvqj;
+}
+_rtZCSV->kdgpmjo1rd = 0.0;
+if (rtB.patit2pzxt > 0.0) {
+    _rtZCSV->kdgpmjo1rd = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 360)>\
+if (rtDW.kgqeqa0kg3 == 0) {
+    _rtZCSV->bmiqoymodw = rtB.jiwa124xvu - rtP.DeadZone_Start_idc5v5etmi;
+    _rtZCSV->gelogl2h0e = rtB.jiwa124xvu - rtP.DeadZone_End_cvfgulcmcs;
+}
+_rtZCSV->hvemmfblyr = 0.0;
+if (rtB.p012sm0dc0 > 0.0) {
+    _rtZCSV->hvemmfblyr = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 385)>\
+if (rtDW.d3pt2fel14 == 0) {
+    _rtZCSV->lxjzpig0r4 = rtB.kiyybzmwnb - rtP.DeadZone_Start_auibzw0tg4;
+    _rtZCSV->mu5ceybezr = rtB.kiyybzmwnb - rtP.DeadZone_End_fevhq4dgxq;
+}
+_rtZCSV->c5ramombnk = 0.0;
+if (rtB.oojivg2hly > 0.0) {
+    _rtZCSV->c5ramombnk = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 408)>\
+if (rtDW.afan5giau5 == 0) {
+    _rtZCSV->i5ehy0pevz = rtB.b1dbqb5vts - rtP.DeadZone_Start_jize4tflg5;
+    _rtZCSV->aqkmexblmi = rtB.b1dbqb5vts - rtP.DeadZone_End_m14xnqgjep;
+}
+_rtZCSV->l4awx5vra5 = 0.0;
+if (rtB.onuqaf4pyf > 0.0) {
+    _rtZCSV->l4awx5vra5 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 431)>\
+if (rtDW.dwe4eoixnw == 0) {
+    _rtZCSV->lkbjzwbsrj = rtB.hl40zlbfak - rtP.DeadZone_Start_hpgsysyaiy;
+    _rtZCSV->jshtqom25l = rtB.hl40zlbfak - rtP.DeadZone_End_k3pszwujlz;
+}
+_rtZCSV->jiyososh5o = 0.0;
+if (rtB.immybftbkf > 0.0) {
+    _rtZCSV->jiyososh5o = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 454)>\
+if (rtDW.osenpjo1li == 0) {
+    _rtZCSV->bhxfkm04fd = rtB.okhjliduc2 - rtP.DeadZone_Start_jhovf3rquv;
+    _rtZCSV->jniyu3f1by = rtB.okhjliduc2 - rtP.DeadZone_End_kwdgg1ua0a;
+}
+_rtZCSV->let13dyrfd = 0.0;
+if (rtB.fhn2km4mnb > 0.0) {
+    _rtZCSV->let13dyrfd = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 479)>\
+if (rtDW.junkmumhn4 == 0) {
+    _rtZCSV->lviauitgqj = rtB.o02y24wifn - rtP.DeadZone_Start_k3uk3fe3cq;
+    _rtZCSV->jimcy45luz = rtB.o02y24wifn - rtP.DeadZone_End_pt1fkp4a2z;
+}
+_rtZCSV->n0tkyx4oqo = 0.0;
+if (rtB.ovgrtmv05z > 0.0) {
+    _rtZCSV->n0tkyx4oqo = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 502)>\
+if (rtDW.lr01kp0vzx == 0) {
+    _rtZCSV->n14uzloi2u = rtB.db0cuu14cx - rtP.DeadZone_Start_eow3luwfg2;
+    _rtZCSV->dnwijsnrdz = rtB.db0cuu14cx - rtP.DeadZone_End_ifkvvttqzu;
+}
+_rtZCSV->fsqabnevuw = 0.0;
+if (rtB.iahbvaytwp > 0.0) {
+    _rtZCSV->fsqabnevuw = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 525)>\
+if (rtDW.ll4elxzuxp == 0) {
+    _rtZCSV->pkq0pkddvw = rtB.aemhwx02t3 - rtP.DeadZone_Start_kuhsp44jrb;
+    _rtZCSV->hmjcg2kufs = rtB.aemhwx02t3 - rtP.DeadZone_End_o0klbicdak;
+}
+_rtZCSV->c4jophu4y4 = 0.0;
+if (rtB.mub0npbrwi > 0.0) {
+    _rtZCSV->c4jophu4y4 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 548)>\
+if (rtDW.imylfqchhd == 0) {
+    _rtZCSV->atpuvoz5pg = rtB.ks5wpj4tsc - rtP.DeadZone_Start_jvs1s3lhtl;
+    _rtZCSV->jmo3korxc1 = rtB.ks5wpj4tsc - rtP.DeadZone_End_klszflkked;
+}
+_rtZCSV->l0nmynltux = 0.0;
+if (rtB.fsbkq33wwv > 0.0) {
+    _rtZCSV->l0nmynltux = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 573)>\
+if (rtDW.p0qdp05ddx == 0) {
+    _rtZCSV->gfmdvkt3dv = rtB.miyil52ser - rtP.DeadZone_Start_pzz3b2zsk1;
+    _rtZCSV->eeuodugvg1 = rtB.miyil52ser - rtP.DeadZone_End_pj0nukt050;
+}
+_rtZCSV->gi4sp3r0h5 = 0.0;
+if (rtB.afn2awb5bp > 0.0) {
+    _rtZCSV->gi4sp3r0h5 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 596)>\
+if (rtDW.hc5ijho0vh == 0) {
+    _rtZCSV->gbcusj5bod = rtB.hth01wonma - rtP.DeadZone_Start_p3efwuhpl1;
+    _rtZCSV->ll2qu0frfa = rtB.hth01wonma - rtP.DeadZone_End_bwub3wyxro;
+}
+_rtZCSV->dba1lcvct0 = 0.0;
+if (rtB.gkmtxotpri > 0.0) {
+    _rtZCSV->dba1lcvct0 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 619)>\
+if (rtDW.bkxhpfd33p == 0) {
+    _rtZCSV->pffmhb5uh3 = rtB.b5e1vweepo - rtP.DeadZone_Start_o5acy5gtow;
+    _rtZCSV->ekaqsxsunu = rtB.b5e1vweepo - rtP.DeadZone_End_lukuornub2;
+}
+_rtZCSV->dsf2o3smeb = 0.0;
+if (rtB.hjp2kweman > 0.0) {
+    _rtZCSV->dsf2o3smeb = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 642)>\
+if (rtDW.cf1zf1heew == 0) {
+    _rtZCSV->p24liiux32 = rtB.fkycqbhyld - rtP.DeadZone_Start_jzuiq3hsjd;
+    _rtZCSV->otdcqjmuhl = rtB.fkycqbhyld - rtP.DeadZone_End_eudhs3qy2a;
+}
+_rtZCSV->m3ujvorzsi = 0.0;
+if (rtB.l0vbhxdqu1 > 0.0) {
+    _rtZCSV->m3ujvorzsi = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 667)>\
+if (rtDW.n4vq0fw4e3 == 0) {
+    _rtZCSV->guigrrm0vw = rtB.emaj2jmlmh - rtP.DeadZone_Start_epemc2wysb;
+    _rtZCSV->h3lvbb5gu0 = rtB.emaj2jmlmh - rtP.DeadZone_End_nj1zqzgk00;
+}
+_rtZCSV->eje2n3oyl4 = 0.0;
+if (rtB.ezevgtxqzr > 0.0) {
+    _rtZCSV->eje2n3oyl4 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 690)>\
+if (rtDW.ktuz5dbs4r == 0) {
+    _rtZCSV->beiazv12fr = rtB.culmdbbuxy - rtP.DeadZone_Start_bi245px4hk;
+    _rtZCSV->hlsbwzrh41 = rtB.culmdbbuxy - rtP.DeadZone_End_dbc3ltsyns;
+}
+_rtZCSV->nlcmhtsmfo = 0.0;
+if (rtB.as3peny1tv > 0.0) {
+    _rtZCSV->nlcmhtsmfo = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 713)>\
+if (rtDW.ac2x2prc2a == 0) {
+    _rtZCSV->hjoee1fvfa = rtB.kd15bue02g - rtP.DeadZone_Start_hsnbcgingl;
+    _rtZCSV->mtjpvizlfu = rtB.kd15bue02g - rtP.DeadZone_End_fqxfdiuqmz;
+}
+_rtZCSV->bmeh0ivq1g = 0.0;
+if (rtB.ep2gkaipt1 > 0.0) {
+    _rtZCSV->bmeh0ivq1g = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 736)>\
+if (rtDW.k004mo4zbr == 0) {
+    _rtZCSV->mlxciyugqj = rtB.iqskg205ka - rtP.DeadZone_Start_owidyu0ygb;
+    _rtZCSV->pbweuv0fsc = rtB.iqskg205ka - rtP.DeadZone_End_bktfcawhk5;
+}
+_rtZCSV->hke2ebbuf2 = 0.0;
+if (rtB.h5pjvyih2z > 0.0) {
+    _rtZCSV->hke2ebbuf2 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 761)>\
+if (rtDW.hifryqsgr0 == 0) {
+    _rtZCSV->ayqxiljfyv = rtB.kit23da3ek - rtP.DeadZone_Start_mwwnbfabvp;
+    _rtZCSV->hrhxfdyjdn = rtB.kit23da3ek - rtP.DeadZone_End_ef1vvdd42t;
+}
+_rtZCSV->a5g4nsrlgl = 0.0;
+if (rtB.m1vgaovw4y > 0.0) {
+    _rtZCSV->a5g4nsrlgl = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 784)>\
+if (rtDW.h5vpvqa1pt == 0) {
+    _rtZCSV->pmhzmdlpya = rtB.d5u2gv4uuf - rtP.DeadZone_Start_marwo0g0g4;
+    _rtZCSV->ltzykucnqd = rtB.d5u2gv4uuf - rtP.DeadZone_End_jeexcemro5;
+}
+_rtZCSV->gxvyhfav34 = 0.0;
+if (rtB.do3g1ffbzl > 0.0) {
+    _rtZCSV->gxvyhfav34 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 807)>\
+if (rtDW.a5wcuu1yfr == 0) {
+    _rtZCSV->mk454cfgwz = rtB.anrgdqgxeb - rtP.DeadZone_Start_ege4xfs0oe;
+    _rtZCSV->mbqzmyet2f = rtB.anrgdqgxeb - rtP.DeadZone_End_fufzu0h5fl;
+}
+_rtZCSV->byjixzn0qq = 0.0;
+if (rtB.nlrhpcevw5 > 0.0) {
+    _rtZCSV->byjixzn0qq = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 830)>\
+if (rtDW.a4vjhwlij4 == 0) {
+    _rtZCSV->e2g0ikitaf = rtB.kz3xqv1ihp - rtP.DeadZone_Start_celmqplmsw;
+    _rtZCSV->k0h1p5y3ao = rtB.kz3xqv1ihp - rtP.DeadZone_End_egzrxzaoy2;
+}
+_rtZCSV->fehldo03qi = 0.0;
+if (rtB.pzcqzehfia > 0.0) {
+    _rtZCSV->fehldo03qi = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 853)>\
+if (rtDW.nlkqxnhsjo == 0) {
+    _rtZCSV->fvg4cmkokw = rtB.gav3ldnknh - rtP.DeadZone_Start_bu0vmbb3o3;
+    _rtZCSV->f3r0cw3frj = rtB.gav3ldnknh - rtP.DeadZone_End_c4ole043ej;
+}
+_rtZCSV->hy05eekc5b = 0.0;
+if (rtB.fqb1wwmsdb > 0.0) {
+    _rtZCSV->hy05eekc5b = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 876)>\
+if (rtDW.gijsuf3hol == 0) {
+    _rtZCSV->dwlqve1tzm = rtB.oljqv5dlu3 - rtP.DeadZone_Start_fpfmtlca4c;
+    _rtZCSV->ogiz2z0t3z = rtB.oljqv5dlu3 - rtP.DeadZone_End_fqmwdfpagx;
+}
+_rtZCSV->fc0bh5fakp = 0.0;
+if (rtB.jn3pftybhd > 0.0) {
+    _rtZCSV->fc0bh5fakp = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 901)>\
+if (rtDW.gx0lqdovbv == 0) {
+    _rtZCSV->c2xpbfv0c0 = rtB.i4a2hpgzax - rtP.DeadZone_Start_joj2xdkz4a;
+    _rtZCSV->mztqmkv2zt = rtB.i4a2hpgzax - rtP.DeadZone_End_f3auvst3gg;
+}
+_rtZCSV->dzpx5fsuja = 0.0;
+if (rtB.fwrs0oxul2 > 0.0) {
+    _rtZCSV->dzpx5fsuja = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 924)>\
+if (rtDW.nsihkxjqyz == 0) {
+    _rtZCSV->labxvign23 = rtB.dbb3vtwzih - rtP.DeadZone_Start_nlzpnixf3i;
+    _rtZCSV->l4a2ejqiky = rtB.dbb3vtwzih - rtP.DeadZone_End_e0twflcze2;
+}
+_rtZCSV->bdjftt3fsu = 0.0;
+if (rtB.lvpamoe1zv > 0.0) {
+    _rtZCSV->bdjftt3fsu = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 947)>\
+if (rtDW.hmaobv5v0y == 0) {
+    _rtZCSV->jpe5xu5dhh = rtB.dz0wq13354 - rtP.DeadZone_Start_ih3cdfr1se;
+    _rtZCSV->mqzzkssy24 = rtB.dz0wq13354 - rtP.DeadZone_End_ge2yhq3zyu;
+}
+_rtZCSV->cibmpws4zk = 0.0;
+if (rtB.euvhwpxy2e > 0.0) {
+    _rtZCSV->cibmpws4zk = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 970)>\
+if (rtDW.bo4koh1kuu == 0) {
+    _rtZCSV->ecelmmch2d = rtB.c2n41tqgbh - rtP.DeadZone_Start_nlhc3w5lyx;
+    _rtZCSV->i5glrauok2 = rtB.c2n41tqgbh - rtP.DeadZone_End_bwwtvryq2o;
+}
+_rtZCSV->gevuqrepvf = 0.0;
+if (rtB.jf3n4exsut > 0.0) {
+    _rtZCSV->gevuqrepvf = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 995)>\
+if (rtDW.aqjh4zv5mg == 0) {
+    _rtZCSV->lroft25mfw = rtB.f0z1l4hkfv - rtP.DeadZone_Start_b5k0ykhvcn;
+    _rtZCSV->awzx2a2frt = rtB.f0z1l4hkfv - rtP.DeadZone_End_ix24cxicd5;
+}
+_rtZCSV->h5xstamv30 = 0.0;
+if (rtB.bmt2idaoyt > 0.0) {
+    _rtZCSV->h5xstamv30 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1018)>\
+if (rtDW.psk5gc4iy4 == 0) {
+    _rtZCSV->jjaugqvknt = rtB.fvnw3qjjkc - rtP.DeadZone_Start_ppne1pekqa;
+    _rtZCSV->c24x2knjma = rtB.fvnw3qjjkc - rtP.DeadZone_End_bimlbxuyjw;
+}
+_rtZCSV->l2h23ixzxs = 0.0;
+if (rtB.htjsxqepcf > 0.0) {
+    _rtZCSV->l2h23ixzxs = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1041)>\
+if (rtDW.m3em1q43l1 == 0) {
+    _rtZCSV->npmlpnii2h = rtB.gjfoya53cg - rtP.DeadZone_Start_hdey5c41qv;
+    _rtZCSV->njd1r4snar = rtB.gjfoya53cg - rtP.DeadZone_End_lrrdxgbaeg;
+}
+_rtZCSV->egg4ltnw0p = 0.0;
+if (rtB.amnpgkpums > 0.0) {
+    _rtZCSV->egg4ltnw0p = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1064)>\
+if (rtDW.bh5jz1pnh1 == 0) {
+    _rtZCSV->abwic0rded = rtB.ebfuqpzcd1 - rtP.DeadZone_Start_e4ydaa3zuj;
+    _rtZCSV->nf3tcikxht = rtB.ebfuqpzcd1 - rtP.DeadZone_End_lzcf1fh1hc;
+}
+_rtZCSV->jfofkkybxi = 0.0;
+if (rtB.a4zkwumjyo > 0.0) {
+    _rtZCSV->jfofkkybxi = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1089)>\
+if (rtDW.puez1jtvag == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.gormj0u13k", "&rtP.gormj0u13k", "&_rtZCSV->gormj0u13k"], 64, 16, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->d2xi0tk0qj = 0.0;
+if (rtB.ovcgxyrob3 > 0.0) {
+    _rtZCSV->d2xi0tk0qj = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1112)>\
+if (rtDW.bldgy3svdi == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.i2nob4k5vf", "&rtP.i2nob4k5vf", "&_rtZCSV->i2nob4k5vf"], 64, 17, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->fh5h5efqzk = 0.0;
+if (rtB.kqx5e3335y > 0.0) {
+    _rtZCSV->fh5h5efqzk = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1135)>\
+if (rtDW.hkb03swvc0 == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.cp45zsb124", "&rtP.cp45zsb124", "&_rtZCSV->cp45zsb124"], 64, 18, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->nmbd12fzjx = 0.0;
+if (rtB.j0nr3rnij1 > 0.0) {
+    _rtZCSV->nmbd12fzjx = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1158)>\
+if (rtDW.eacxdtmc3a == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.monwszxfaj", "&rtP.monwszxfaj", "&_rtZCSV->monwszxfaj"], 64, 19, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->glhgatz5au = 0.0;
+if (rtB.bh4xj3uqra > 0.0) {
+    _rtZCSV->glhgatz5au = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1183)>\
+if (rtDW.ejzcuudbza == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.mknieh24qv", "&rtP.mknieh24qv", "&_rtZCSV->mknieh24qv"], 64, 12, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->df3duq1pqc = 0.0;
+if (rtB.oytzapblhp > 0.0) {
+    _rtZCSV->df3duq1pqc = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1206)>\
+if (rtDW.jjauoqr1h1 == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.hdpzcz3lzv", "&rtP.hdpzcz3lzv", "&_rtZCSV->hdpzcz3lzv"], 64, 13, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->hufaio3vjq = 0.0;
+if (rtB.ik2syhr2vs > 0.0) {
+    _rtZCSV->hufaio3vjq = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1229)>\
+if (rtDW.dq53ivxveg == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.lllydn3o3h", "&rtP.lllydn3o3h", "&_rtZCSV->lllydn3o3h"], 64, 14, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->cwarw2b0hb = 0.0;
+if (rtB.ghwg3t4eff > 0.0) {
+    _rtZCSV->cwarw2b0hb = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1252)>\
+if (rtDW.egk4c3iggk == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.lme11mqlhk", "&rtP.lme11mqlhk", "&_rtZCSV->lme11mqlhk"], 64, 15, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->gkgxfynlqk = 0.0;
+if (rtB.hzoid144nw > 0.0) {
+    _rtZCSV->gkgxfynlqk = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1277)>\
+if (rtDW.mni1ch4pik == 0) {
+    _rtZCSV->lxoaktggu1 = rtB.kw3jsh5muu - rtP.DeadZone_Start_ek1ccah5t1;
+    _rtZCSV->ia4hxan30l = rtB.kw3jsh5muu - rtP.DeadZone_End_agpo5zb4wn;
+}
+_rtZCSV->i2gvv112s5 = 0.0;
+if (rtB.aojgjwvgre > 0.0) {
+    _rtZCSV->i2gvv112s5 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1300)>\
+if (rtDW.pusxwcnsv3 == 0) {
+    _rtZCSV->octtq4i22p = rtB.ar5wdbdmv0 - rtP.DeadZone_Start_itu2ulj1ox;
+    _rtZCSV->bgsqbzprn3 = rtB.ar5wdbdmv0 - rtP.DeadZone_End_ap3ec3ym4y;
+}
+_rtZCSV->pdrxqd3itt = 0.0;
+if (rtB.dghdw5xtof > 0.0) {
+    _rtZCSV->pdrxqd3itt = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1323)>\
+if (rtDW.geidexyxwu == 0) {
+    _rtZCSV->ogs5id5ivm = rtB.guvwtshiak - rtP.DeadZone_Start_nzdqk2il2a;
+    _rtZCSV->ka4bmavthx = rtB.guvwtshiak - rtP.DeadZone_End_o524hmn5zo;
+}
+_rtZCSV->gh1ydyt44m = 0.0;
+if (rtB.asy11awanw > 0.0) {
+    _rtZCSV->gh1ydyt44m = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1346)>\
+if (rtDW.aiirj5iyi1 == 0) {
+    _rtZCSV->pkydvgx0p4 = rtB.lfsr3nquyr - rtP.DeadZone_Start_ez3tqj1db2;
+    _rtZCSV->k3qyscuier = rtB.lfsr3nquyr - rtP.DeadZone_End_ay5u1z54vx;
+}
+_rtZCSV->fli3154uc4 = 0.0;
+if (rtB.jzj4oi1eg1 > 0.0) {
+    _rtZCSV->fli3154uc4 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1369)>\
+if (rtDW.npeil0bjir == 0) {
+    _rtZCSV->bnyleqpzbe = rtB.f0muj2a0sa - rtP.DeadZone_Start_nkvhntqp4d;
+    _rtZCSV->p0u2fhjphm = rtB.f0muj2a0sa - rtP.DeadZone_End_l0uzxhve5y;
+}
+_rtZCSV->ihf1meebse = 0.0;
+if (rtB.bxpvwdieu3 > 0.0) {
+    _rtZCSV->ihf1meebse = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1394)>\
+if (rtDW.laplsqiogi == 0) {
+    _rtZCSV->mzhveuajjd = rtB.ft1kabphpj - rtP.DeadZone_Start_iuow4jt0aw;
+    _rtZCSV->gko4hmkvhq = rtB.ft1kabphpj - rtP.DeadZone_End_g4eitpe21s;
+}
+_rtZCSV->dxm2cjs2cd = 0.0;
+if (rtB.cj3eilfayq > 0.0) {
+    _rtZCSV->dxm2cjs2cd = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1417)>\
+if (rtDW.fengnmemdn == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.bo4dcbamkm", "&rtP.bo4dcbamkm", "&_rtZCSV->bo4dcbamkm"], 64, 8, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->gjfekvqj3y = 0.0;
+if (rtB.pg51wchilx > 0.0) {
+    _rtZCSV->gjfekvqj3y = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1440)>\
+if (rtDW.ivsb2gue04 == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.ooxyjyu5fe", "&rtP.ooxyjyu5fe", "&_rtZCSV->ooxyjyu5fe"], 64, 9, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->enqy4t4srl = 0.0;
+if (rtB.b1s11z3twn > 0.0) {
+    _rtZCSV->enqy4t4srl = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1463)>\
+if (rtDW.mj0zc3m2g5 == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.bf5hi5wpce", "&rtP.bf5hi5wpce", "&_rtZCSV->bf5hi5wpce"], 64, 10, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->hk3n4u3gxc = 0.0;
+if (rtB.csxipvcamt > 0.0) {
+    _rtZCSV->hk3n4u3gxc = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1486)>\
+if (rtDW.dl2kko5ifw == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.nrdlagit2x", "&rtP.nrdlagit2x", "&_rtZCSV->nrdlagit2x"], 64, 11, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->l3xv2ll54t = 0.0;
+if (rtB.cz4o4s11m4 > 0.0) {
+    _rtZCSV->l3xv2ll54t = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1511)>\
+if (rtDW.otoavissyz == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.bexjktaoea", "&rtP.bexjktaoea", "&_rtZCSV->bexjktaoea"], 64, 4, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->p5hqjjjsnm = 0.0;
+if (rtB.idepii0din > 0.0) {
+    _rtZCSV->p5hqjjjsnm = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1534)>\
+if (rtDW.pokmscwxqg == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.lqw5nwnnjd", "&rtP.lqw5nwnnjd", "&_rtZCSV->lqw5nwnnjd"], 64, 5, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->j0ae4fbkj5 = 0.0;
+if (rtB.bh3wnuymey > 0.0) {
+    _rtZCSV->j0ae4fbkj5 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1557)>\
+if (rtDW.h1x1thdawr == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.pteusy0lth", "&rtP.pteusy0lth", "&_rtZCSV->pteusy0lth"], 64, 6, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->ljoplvhalu = 0.0;
+if (rtB.hpthlb2zfw > 0.0) {
+    _rtZCSV->ljoplvhalu = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1580)>\
+if (rtDW.aunaaidjol == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.hix4nmzvmo", "&rtP.hix4nmzvmo", "&_rtZCSV->hix4nmzvmo"], 64, 7, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->e3gwrhznhd = 0.0;
+if (rtB.c0du2vvv3x > 0.0) {
+    _rtZCSV->e3gwrhznhd = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1605)>\
+if (rtDW.id0sbsyi14 == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.nlywbnsue4l", "&rtP.nlywbnsue4l", "&_rtZCSV->nlywbnsue4l"], 64, 0, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->fa1hq01bgk = 0.0;
+if (rtB.oru1uyiyrz > 0.0) {
+    _rtZCSV->fa1hq01bgk = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1628)>\
+if (rtDW.e3z33elamy == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.koy40z5g45", "&rtP.koy40z5g45", "&_rtZCSV->koy40z5g45"], 64, 1, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->gqtzzxabch = 0.0;
+if (rtB.eg5esabmyn > 0.0) {
+    _rtZCSV->gqtzzxabch = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1651)>\
+if (rtDW.omszwmkc45 == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.jkc1iqursw", "&rtP.jkc1iqursw", "&_rtZCSV->jkc1iqursw"], 64, 2, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->flnyddwtsi = 0.0;
+if (rtB.d14yevl2z5 > 0.0) {
+    _rtZCSV->flnyddwtsi = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1674)>\
+if (rtDW.aaur0a53wp == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.kcqny1hcou", "&rtP.kcqny1hcou", "&_rtZCSV->kcqny1hcou"], 64, 3, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->fesocm22lh = 0.0;
+if (rtB.fmg03f4io2 > 0.0) {
+    _rtZCSV->fesocm22lh = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1703)>\
+if (rtDW.j2oml1fnen == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.o1nhalkyj1", "&rtP.o1nhalkyj1", "&_rtZCSV->o1nhalkyj1"], 64, 20, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->gpy5sh3zbe = 0.0;
+if (rtB.pi1syjf5c2 > 0.0) {
+    _rtZCSV->gpy5sh3zbe = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1726)>\
+if (rtDW.gziuvy5vrb == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.njy4ou3xtp", "&rtP.njy4ou3xtp", "&_rtZCSV->njy4ou3xtp"], 64, 21, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->cqup1fgur5 = 0.0;
+if (rtB.gmausvklk0 > 0.0) {
+    _rtZCSV->cqup1fgur5 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1749)>\
+if (rtDW.hxa3qgpgdy == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.or1mfpmav0", "&rtP.or1mfpmav0", "&_rtZCSV->or1mfpmav0"], 64, 22, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->ema35bkoud = 0.0;
+if (rtB.jdcq1btsej > 0.0) {
+    _rtZCSV->ema35bkoud = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1772)>\
+if (rtDW.oymvfy1u2t == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.jfianglajh", "&rtP.jfianglajh", "&_rtZCSV->jfianglajh"], 64, 23, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->kc2yeqw5f4 = 0.0;
+if (rtB.my3n24swhi > 0.0) {
+    _rtZCSV->kc2yeqw5f4 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1797)>\
+if (rtDW.oed5crn0g3 == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.nelc3hrprh", "&rtP.nelc3hrprh", "&_rtZCSV->nelc3hrprh"], 64, 24, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->p2iq3ox4o4 = 0.0;
+if (rtB.b5ucstcaag > 0.0) {
+    _rtZCSV->p2iq3ox4o4 = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1820)>\
+if (rtDW.luzlmpylfa == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.owioi2gire", "&rtP.owioi2gire", "&_rtZCSV->owioi2gire"], 64, 25, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->ptqjtjatjb = 0.0;
+if (rtB.mqtndy3wcd > 0.0) {
+    _rtZCSV->ptqjtjatjb = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1843)>\
+if (rtDW.m1mix3kmu4 == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.arrnbkhd0o", "&rtP.arrnbkhd0o", "&_rtZCSV->arrnbkhd0o"], 64, 26, 12, 0, 12, 133)>\
+
+%endif
+}
+_rtZCSV->nm1e3cklep = 0.0;
+if (rtB.pnx1dy04qe > 0.0) {
+    _rtZCSV->nm1e3cklep = 1.0;
+}
+%<SLibCGIRZeroOutZeroCrossingsForSystem(133, 133, 1866)>\
+if (rtDW.j1yuttvlez == 0) {
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "ZeroCrossing",0)
+%if SLibCG_SystemFcnArgAccessed("gpcq2n32tg",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("gpcq2n32tg", ["%<_modelSS>", "&rtB.pcendk412i", "&rtP.pcendk412i", "&_rtZCSV->pcendk412i"], 64, 27, 12, 0, 12, 133)>\
+
+%endif
+}
+%<tlcZeroCrossingsFcnOfS133B1885>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedZeroCrossingLocalVars", localVarDecl)>
+%endfunction
+%function ZeroCrossingsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ZeroCrossings(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 8, fcnProtoType)>
+%endfunction

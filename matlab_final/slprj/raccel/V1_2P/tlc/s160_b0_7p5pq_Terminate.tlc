@@ -1,0 +1,29 @@
+%implements s160_b0_7p5pq_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcTerminateFcnOfS133B8 = OpaqueTLCBlockFcn("Terminate", 133, 8, 1, 9, 0)
+%assign tlcTerminateFcnOfS133B1885 = OpaqueTLCBlockFcn("Terminate", 133, 1885, 1, 9, 1)
+%<tlcTerminateFcnOfS133B8>\
+neu_destroy_diagnostic_manager((NeuDiagnosticManager *)rtDW.cgw3xqjg1e);
+nesl_destroy_simulation_data((NeslSimulationData *)rtDW.lxwr3f5kfb);
+nesl_erase_simulator("V1_2P/Body Configuration/Solver Configuration_1");
+nesl_destroy_registry();
+neu_destroy_diagnostic_manager((NeuDiagnosticManager *)rtDW.j2edeadroi);
+nesl_destroy_simulation_data((NeslSimulationData *)rtDW.kaf1ctyo2a);
+nesl_erase_simulator("V1_2P/Body Configuration/Solver Configuration_1");
+nesl_destroy_registry();
+%<tlcTerminateFcnOfS133B1885>\
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 9, fcnProtoType)>
+%endfunction

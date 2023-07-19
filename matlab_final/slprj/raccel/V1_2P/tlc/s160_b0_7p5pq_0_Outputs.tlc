@@ -1,0 +1,234 @@
+%implements s160_b0_7p5pq_0_Outputs "C"
+
+%function OutputsForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+real_T apf4exp2yf;
+%closefile localVarDecl
+%assign _modelSS = ""
+
+%if SLibCG_FcnCallArgAccessed(0,2,2,0)
+%<SLibCG_AccessArg(0 ,2, 5)>
+%endif
+%if SLibCG_FcnCallArgAccessed(0,2,2,1)
+%<SLibCG_AccessArg(0 ,2, 20)>
+%endif
+%if SLibCG_FcnCallArgAccessed(0,2,2,2)
+%<SLibCG_AccessArg(0 ,2, 20)>
+%endif
+%if SLibCG_FcnCallArgAccessed(0,2,2,3)
+%<SLibCG_AccessArg(0 ,2, 0)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(0,2,1,0)
+%<SLibCG_AccessArg(0 ,2, 5)>
+%endif
+%if SLibCG_FcnCallArgAccessed(0,2,1,1)
+%<SLibCG_AccessArg(0 ,2, 20)>
+%endif
+%if SLibCG_FcnCallArgAccessed(0,2,1,2)
+%<SLibCG_AccessArg(0 ,2, 11)>
+%endif
+%if SLibCG_FcnCallArgAccessed(0,2,1,3)
+%<SLibCG_AccessArg(0 ,2, 0)>
+%endif
+
+%if SLibCG_FcnCallArgAccessed(0,2,0,0)
+%<SLibCG_AccessArg(0 ,2, 5)>
+%endif
+%if SLibCG_FcnCallArgAccessed(0,2,0,1)
+%<SLibCG_AccessArg(0 ,2, 20)>
+%endif
+%if SLibCG_FcnCallArgAccessed(0,2,0,2)
+%<SLibCG_AccessArg(0 ,2, 20)>
+%endif
+%if SLibCG_FcnCallArgAccessed(0,2,0,3)
+%<SLibCG_AccessArg(0 ,2, 0)>
+%endif
+
+%<SLibGenerateExtModeOutput(system)>
+localB->opdyh0xia0 = muDoubleScalarAbs(jkvurdc1zi);
+localB->i0vc1emrfb = (rtp_sphere_rad + rtp_plane_depth) - localB->opdyh0xia0;
+if (%<(LibIsMajorTimeStep())>) {
+    if (localB->i0vc1emrfb > localP->DeadZone_End) {
+        localDW->km0gigkbfd = 1;
+    } else if (localB->i0vc1emrfb >= localP->DeadZone_Start) {
+        localDW->km0gigkbfd = 0;
+    } else {
+        localDW->km0gigkbfd = -1;
+    }
+}
+if (localDW->km0gigkbfd == 1) {
+    localB->d2og13hqqm = localB->i0vc1emrfb - localP->DeadZone_End;
+} else if (localDW->km0gigkbfd == -1) {
+    localB->d2og13hqqm = localB->i0vc1emrfb - localP->DeadZone_Start;
+} else {
+    localB->d2og13hqqm = 0.0;
+}
+localB->ayacj2c0i2 = muDoubleScalarSign(jkvurdc1zi);
+localB->pklgfzafrc = localB->ayacj2c0i2 * pjb0zpy2gd;
+localB->btfc4ar4v2 = localP->Gain2_Gain * localB->pklgfzafrc;
+localB->gd4lliitnu = muDoubleScalarSign(pjb0zpy2gd);
+localB->ftpclmlxuq = rtp_k_contact * localB->d2og13hqqm;
+localB->lxncv3oijz = localB->ayacj2c0i2 * localB->ftpclmlxuq;
+localB->pyo3vhb5wu = muDoubleScalarSign(localB->d2og13hqqm);
+localB->a3rgpcdyaw = muDoubleScalarAbs(localB->pyo3vhb5wu);
+if (localB->btfc4ar4v2 > localP->Saturation_UpperSat) {
+    localB->gmtcwolfch = localP->Saturation_UpperSat;
+} else if (localB->btfc4ar4v2 < localP->Saturation_LowerSat) {
+    localB->gmtcwolfch = localP->Saturation_LowerSat;
+} else {
+    localB->gmtcwolfch = localB->btfc4ar4v2;
+}
+localB->kwelwu2njx = -rtp_b_contact * localB->gmtcwolfch;
+localB->f0rmxnm0i3 = localB->a3rgpcdyaw * localB->kwelwu2njx;
+localB->hf4vjst2ki = localB->f0rmxnm0i3 * localB->gd4lliitnu;
+localB->l4tssijmm4 = localB->lxncv3oijz + localB->hf4vjst2ki;
+localB->e0wn31kn3w[0] = localP->Fx_Value;
+localB->e0wn31kn3w[1] = localP->Fx_Value;
+localB->e0wn31kn3w[2] = localB->l4tssijmm4;
+localB->bnl3vkhhc4 = hxkyiw5qoy * rtp_sphere_rad;
+localB->ff0iuiytmd = localB->ayacj2c0i2 * hvadzho51i;
+localB->bld52npcho = localB->bnl3vkhhc4 + localB->ff0iuiytmd;
+localB->kqs5a4slcb = rtp_sphere_rad * aohj5gsm4k;
+localB->nnq5u22hlz = jaicnggmzj * localB->ayacj2c0i2;
+localB->hnp3wkpoa0 = localB->nnq5u22hlz - localB->kqs5a4slcb;
+apf4exp2yf = muDoubleScalarAtan2(localB->bld52npcho, localB->hnp3wkpoa0);
+localB->lvyhpmb3u1 = localP->Constant_Value * muDoubleScalarCos(apf4exp2yf);
+localB->gaxd2lcy00 = localP->Constant_Value * muDoubleScalarSin(apf4exp2yf);
+localB->akwyboj4a2[0] = localB->lvyhpmb3u1;
+localB->akwyboj4a2[1] = localB->gaxd2lcy00;
+localB->akwyboj4a2[2] = localP->Fx1_Value;
+localB->mr4jlc5akg[0] = localP->Gain_Gain * localB->e0wn31kn3w[0];
+localB->nwrcdyzxpm[0] = localP->Gain_Gain_igcy3z4kff * localB->akwyboj4a2[0];
+localB->epn0jcw5cy[0] = localB->mr4jlc5akg[0] + localB->nwrcdyzxpm[0];
+localB->mr4jlc5akg[1] = localP->Gain_Gain * localB->e0wn31kn3w[1];
+localB->nwrcdyzxpm[1] = localP->Gain_Gain_igcy3z4kff * localB->akwyboj4a2[1];
+localB->epn0jcw5cy[1] = localB->mr4jlc5akg[1] + localB->nwrcdyzxpm[1];
+localB->mr4jlc5akg[2] = localP->Gain_Gain * localB->e0wn31kn3w[2];
+localB->nwrcdyzxpm[2] = localP->Gain_Gain_igcy3z4kff * localB->akwyboj4a2[2];
+localB->epn0jcw5cy[2] = localB->mr4jlc5akg[2] + localB->nwrcdyzxpm[2];
+dn11tar2yu[0] = localB->epn0jcw5cy[0];
+dn11tar2yu[1] = localB->epn0jcw5cy[1];
+dn11tar2yu[2] = localB->epn0jcw5cy[2];
+localB->hfxdgqrtsj = dieyghwz0i * localB->epn0jcw5cy[2];
+localB->dkrdjg0edg = jkvurdc1zi * localB->epn0jcw5cy[1];
+localB->mteokockgw = jkvurdc1zi * localB->epn0jcw5cy[0];
+localB->khhwu1al0n = ay0v5cnsl3 * localB->epn0jcw5cy[2];
+localB->mk4nidb1x4 = ay0v5cnsl3 * localB->epn0jcw5cy[1];
+localB->jv0wrkcpdr = dieyghwz0i * localB->epn0jcw5cy[0];
+*jyfq0vodcw = localB->hfxdgqrtsj - localB->dkrdjg0edg;
+*luusyifxuj = localB->mteokockgw - localB->khhwu1al0n;
+*nlylbolhpv = localB->mk4nidb1x4 - localB->jv0wrkcpdr;
+localB->j1myafqvfm[0] = localP->Fx2_Value[0] * localB->ayacj2c0i2;
+localB->j1myafqvfm[1] = localP->Fx2_Value[1] * localB->ayacj2c0i2;
+localB->j1myafqvfm[2] = localP->Fx2_Value[2] * localB->ayacj2c0i2;
+localB->dxmc32zz1n = localB->j1myafqvfm[1] * localP->Fx1_Value;
+localB->g1u0j0m1ft = localB->j1myafqvfm[2] * localB->gaxd2lcy00;
+localB->p2si4lm5pb = localB->j1myafqvfm[2] * localB->lvyhpmb3u1;
+localB->jgbghbcqwg = localB->j1myafqvfm[0] * localP->Fx1_Value;
+localB->coc3f3222d = localB->j1myafqvfm[0] * localB->gaxd2lcy00;
+localB->nl2mo5grsb = localB->j1myafqvfm[1] * localB->lvyhpmb3u1;
+localB->exhr4ktpat = localB->dxmc32zz1n - localB->g1u0j0m1ft;
+localB->az5u2gjsf5 = localB->p2si4lm5pb - localB->jgbghbcqwg;
+localB->owj02kzcix = localB->coc3f3222d - localB->nl2mo5grsb;
+%<(SLibCGCallSubFcn("rt_mldivide_U1d3x3_U2d3_Yd3x1_snf", ["asxsba4nuw", "localB->akwyboj4a2", "localB->mftemkutrw", "rtS_m"], 0, 2, 0))>;
+localB->pvfnun1s1q[0] = localB->exhr4ktpat;
+localB->pvfnun1s1q[1] = localB->az5u2gjsf5;
+localB->pvfnun1s1q[2] = localB->owj02kzcix;
+%<(SLibCGCallSubFcn("rt_mldivide_U1d3x3_U2d3_Yd3x1_snf", ["asxsba4nuw", "localB->pvfnun1s1q", "etmwp4xnbf", "rtS_m"], 0, 2, 1))>;
+%<(SLibCGCallSubFcn("rt_mldivide_U1d3x3_U2d3_Yd3x1_snf", ["asxsba4nuw", "localB->e0wn31kn3w", "localB->pwsejsj2q1", "rtS_m"], 0, 2, 2))>;
+aihsczzpyy[0] = localB->pwsejsj2q1[0] + localB->mftemkutrw[0];
+aihsczzpyy[1] = localB->pwsejsj2q1[1] + localB->mftemkutrw[1];
+aihsczzpyy[2] = localB->pwsejsj2q1[2] + localB->mftemkutrw[2];
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[0].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("Output", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Output"))
+%<SLibCG_AccessArg(0, 2, 0)>
+%endif
+%if SLibCG_ArgAccessed(0, 2, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "Output", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Output"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(0, 2, 0)>
+%endif
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction
+%function OutputsFcnProtoTypeForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void nlywbnsue4(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 2, 0)
+%<comma>%<::tSimStructType> *rtS_m\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("nlywbnsue4", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%<comma>real_T ay0v5cnsl3\
+%assign comma = ", "
+%<comma>real_T dieyghwz0i\
+%assign comma = ", "
+%<comma>real_T jkvurdc1zi\
+%assign comma = ", "
+%<comma>real_T pjb0zpy2gd\
+%assign comma = ", "
+%<comma>const real_T asxsba4nuw[9]\
+%assign comma = ", "
+%<comma>real_T hxkyiw5qoy\
+%assign comma = ", "
+%<comma>real_T aohj5gsm4k\
+%assign comma = ", "
+%<comma>real_T jaicnggmzj\
+%assign comma = ", "
+%<comma>real_T hvadzho51i\
+%assign comma = ", "
+%<comma>real_T aihsczzpyy[3]\
+%assign comma = ", "
+%<comma>real_T etmwp4xnbf[3]\
+%assign comma = ", "
+%<comma>real_T dn11tar2yu[3]\
+%assign comma = ", "
+%<comma>real_T *jyfq0vodcw\
+%assign comma = ", "
+%<comma>real_T *luusyifxuj\
+%assign comma = ", "
+%<comma>real_T *nlylbolhpv\
+%assign comma = ", "
+%<comma>real_T rtp_k_contact\
+%assign comma = ", "
+%<comma>real_T rtp_b_contact\
+%assign comma = ", "
+%<comma>real_T rtp_sphere_rad\
+%assign comma = ", "
+%<comma>real_T rtp_plane_depth\
+%assign comma = ", "
+%<comma>ny2ajmb45u *localB\
+%assign comma = ", "
+%<comma>cnpugns1f5 *localDW\
+%assign comma = ", "
+%<comma>gn1ekqmshn *localP\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

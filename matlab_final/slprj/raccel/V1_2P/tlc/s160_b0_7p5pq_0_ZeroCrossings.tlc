@@ -1,0 +1,41 @@
+%implements s160_b0_7p5pq_0_ZeroCrossings "C"
+
+%function ZeroCrossings(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+localZCSV->pkqmzliuwi = localB->i0vc1emrfb - localP->DeadZone_Start;
+localZCSV->i3vwbe2mqo = localB->i0vc1emrfb - localP->DeadZone_End;
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[0].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("ZeroCrossing", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "ZeroCrossing"))
+%<SLibCG_AccessArg(0, 3, 0)>
+%endif
+%if SLibCG_ArgAccessed(0, 3, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "ZeroCrossing", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "ZeroCrossing"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(0, 3, 0)>
+%endif
+%endfunction
+%function ZeroCrossingsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void gpcq2n32tg(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 3, 0)
+%<comma>%<::tSimStructType> *rtS_i\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("gpcq2n32tg", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%<comma>ny2ajmb45u *localB\
+%assign comma = ", "
+%<comma>gn1ekqmshn *localP\
+%assign comma = ", "
+%<comma>f1gi201hvg *localZCSV\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%endfunction

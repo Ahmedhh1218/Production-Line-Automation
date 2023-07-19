@@ -1,0 +1,806 @@
+%implements s160_b0_7p5pq_SystemInitialize "C"
+
+%function SystemInitialize(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+int32_T i;
+%closefile localVarDecl
+%assign _modelSS = ""
+
+%<SLibGetRootInportsFromFile(system, TLC_TRUE)>
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+rtB.nprrv2ekgq = rtP.Out_Y0.Penetration;
+rtB.n4hdjsikbx = 0.0;
+rtB.ancy0giedw = 0.0;
+rtB.gw0gza0yyc = 0.0;
+rtB.ldax3l55qr = 0.0;
+rtB.jxovqbcbrb[0] = 0.0;
+rtB.jxovqbcbrb[1] = 0.0;
+rtB.jxovqbcbrb[2] = 0.0;
+rtB.c0zojr2mo0 = rtP.Out_Y0_hkfxqgtpbo.Penetration;
+rtB.jnpcnkg1ts = 0.0;
+rtB.eyrx1fkw2a = 0.0;
+rtB.bfozqrvmsg = 0.0;
+rtB.fp1eclxd20 = 0.0;
+rtB.p1h3jp052i[0] = 0.0;
+rtB.p1h3jp052i[1] = 0.0;
+rtB.p1h3jp052i[2] = 0.0;
+rtB.csnglmlb4a = rtP.Out_Y0_now3hjje1i.Penetration;
+rtB.csnd4tycjt = 0.0;
+rtB.movwkw11o3 = 0.0;
+rtB.fampvscwfm = 0.0;
+rtB.m1ougkp30b = 0.0;
+rtB.gboaz05xlr[0] = 0.0;
+rtB.gboaz05xlr[1] = 0.0;
+rtB.gboaz05xlr[2] = 0.0;
+rtB.jswpbuahy0 = rtP.Out_Y0_gj3j0pbmod.Penetration;
+rtB.psjumqihyx = 0.0;
+rtB.k5nhfyjyqc = 0.0;
+rtB.ihpqbz4ls2 = 0.0;
+rtB.gynueebc4t = 0.0;
+rtB.mscxfchocr[0] = 0.0;
+rtB.mscxfchocr[1] = 0.0;
+rtB.mscxfchocr[2] = 0.0;
+rtB.kvefhaiu4m = rtP.Out_Y0_f5a5paib4b.Penetration;
+rtB.fkp41my3yl = 0.0;
+rtB.jm5j0bmypv = 0.0;
+rtB.ji1fnkxijy = 0.0;
+rtB.kqet2qpbrh = 0.0;
+rtB.irqwkpp05h[0] = 0.0;
+rtB.irqwkpp05h[1] = 0.0;
+rtB.irqwkpp05h[2] = 0.0;
+rtB.couzosny1l = rtP.Out_Y0_ahm5ynakbj.Penetration;
+rtB.nwoz0i3sj2 = 0.0;
+rtB.gxeyt52ov5 = 0.0;
+rtB.ch5gqbgnjh = 0.0;
+rtB.eb3peuaynj = 0.0;
+rtB.gtf0mcygg1[0] = 0.0;
+rtB.gtf0mcygg1[1] = 0.0;
+rtB.gtf0mcygg1[2] = 0.0;
+rtB.mfc0beiojj = rtP.Out_Y0_bvmxmnguic.Penetration;
+rtB.pfqyirko14 = 0.0;
+rtB.ovnloyawok = 0.0;
+rtB.adfrjetrzp = 0.0;
+rtB.bz2ytho0g2 = 0.0;
+rtB.pjs3ns3wv0[0] = 0.0;
+rtB.pjs3ns3wv0[1] = 0.0;
+rtB.pjs3ns3wv0[2] = 0.0;
+rtB.hl410d0vlu = rtP.Out_Y0_m4mznamhsz.Penetration;
+rtB.eq5e4jfqwy = 0.0;
+rtB.oftafbkm04 = 0.0;
+rtB.f13spyqw42 = 0.0;
+rtB.p1qucaqszt = 0.0;
+rtB.kuo03hkb31[0] = 0.0;
+rtB.kuo03hkb31[1] = 0.0;
+rtB.kuo03hkb31[2] = 0.0;
+rtB.bikhiwpp1g = rtP.Out_Y0_iphtixrvsv.Penetration;
+rtB.cj3dflhpsl = 0.0;
+rtB.am4yg2zdio = 0.0;
+rtB.h10lop45cx = 0.0;
+rtB.h0ykj4goud = 0.0;
+rtB.ltyhy2n4c4[0] = 0.0;
+rtB.ltyhy2n4c4[1] = 0.0;
+rtB.ltyhy2n4c4[2] = 0.0;
+rtB.hfveq4uerz = rtP.Out_Y0_fvlebyyrk1.Penetration;
+rtB.pl5bm2jk2t = 0.0;
+rtB.pgdnzgx0am = 0.0;
+rtB.olakgppxw3 = 0.0;
+rtB.hxf0b30i12 = 0.0;
+rtB.iecoi2mb0b[0] = 0.0;
+rtB.iecoi2mb0b[1] = 0.0;
+rtB.iecoi2mb0b[2] = 0.0;
+rtB.e3odw55ys4 = rtP.Out_Y0_bqlct5g5sk.Penetration;
+rtB.mz3rhvzdym = 0.0;
+rtB.kuitmyunz2 = 0.0;
+rtB.c0fyn25vjp = 0.0;
+rtB.kjm2issckc = 0.0;
+rtB.e413cenfom[0] = 0.0;
+rtB.e413cenfom[1] = 0.0;
+rtB.e413cenfom[2] = 0.0;
+rtB.e1rfffz53i = rtP.Out_Y0_fg55bjwdnv.Penetration;
+rtB.bxfwq4iziu = 0.0;
+rtB.jscsykszu1 = 0.0;
+rtB.bdfqu24kni = 0.0;
+rtB.cwf3fjv4us = 0.0;
+rtB.gusi0bncpy[0] = 0.0;
+rtB.gusi0bncpy[1] = 0.0;
+rtB.gusi0bncpy[2] = 0.0;
+rtB.l0tcf5dkut = rtP.Out_Y0_dig145spyv.Penetration;
+rtB.bsd51zf3zm = 0.0;
+rtB.cr331lpzaq = 0.0;
+rtB.otpsx5ifeq = 0.0;
+rtB.kxrixkafmc = 0.0;
+rtB.g02nugv3ue[0] = 0.0;
+rtB.g02nugv3ue[1] = 0.0;
+rtB.g02nugv3ue[2] = 0.0;
+rtB.apcwja0srk = rtP.Out_Y0_om2zs3uycb.Penetration;
+rtB.pgqfe2cmzf = 0.0;
+rtB.iyhj4ggte2 = 0.0;
+rtB.kgvlukfvyi = 0.0;
+rtB.plsdddamdh = 0.0;
+rtB.nkjymjfp5d[0] = 0.0;
+rtB.nkjymjfp5d[1] = 0.0;
+rtB.nkjymjfp5d[2] = 0.0;
+rtB.jmkwpjwcpt = rtP.Out_Y0_avdzt40l3s.Penetration;
+rtB.gj52oref5s = 0.0;
+rtB.kok053jjtv = 0.0;
+rtB.flstbtox4b = 0.0;
+rtB.mz5biiw4gc = 0.0;
+rtB.nmmeqnu3it[0] = 0.0;
+rtB.nmmeqnu3it[1] = 0.0;
+rtB.nmmeqnu3it[2] = 0.0;
+rtB.mmjd0zsa3w = rtP.Out_Y0_nh3zat5rzw.Penetration;
+rtB.f4nyrqacb5 = 0.0;
+rtB.dpxsiabr5z = 0.0;
+rtB.nh3b3jtdhl = 0.0;
+rtB.br5phixeqt = 0.0;
+rtB.gnwxvqp4os[0] = 0.0;
+rtB.gnwxvqp4os[1] = 0.0;
+rtB.gnwxvqp4os[2] = 0.0;
+rtB.ovk1ihtvgp = rtP.Out_Y0_jcechhdmat.Penetration;
+rtB.gteobnypho = 0.0;
+rtB.niy2epw4uv = 0.0;
+rtB.jsbzyeqs31 = 0.0;
+rtB.gevf4nrl02 = 0.0;
+rtB.ki2aevsxhw[0] = 0.0;
+rtB.ki2aevsxhw[1] = 0.0;
+rtB.ki2aevsxhw[2] = 0.0;
+rtB.oybyw3ogkx = rtP.Out_Y0_dhlevfhmz1.Penetration;
+rtB.ky4r4ltu5k = 0.0;
+rtB.fqo0rlfb1i = 0.0;
+rtB.lioa1iuodr = 0.0;
+rtB.ivaaukyrto = 0.0;
+rtB.hz1mf0dno5[0] = 0.0;
+rtB.hz1mf0dno5[1] = 0.0;
+rtB.hz1mf0dno5[2] = 0.0;
+rtB.i1obxhdfas = rtP.Out_Y0_dihtmuxjsn.Penetration;
+rtB.k53xcjkizl = 0.0;
+rtB.b5mg41cnuc = 0.0;
+rtB.b2mhvpmqzy = 0.0;
+rtB.pmrnfvvkbw = 0.0;
+rtB.o3rz2omjl0[0] = 0.0;
+rtB.o3rz2omjl0[1] = 0.0;
+rtB.o3rz2omjl0[2] = 0.0;
+rtB.bpx1chvtbt = rtP.Out_Y0_dhrd1u31ug.Penetration;
+rtB.c4zgj10trt = 0.0;
+rtB.j3v0wa13xo = 0.0;
+rtB.cgyickdrhr = 0.0;
+rtB.lz3sxfrw5i = 0.0;
+rtB.d5tau22p2d[0] = 0.0;
+rtB.d5tau22p2d[1] = 0.0;
+rtB.d5tau22p2d[2] = 0.0;
+rtB.ovmke2cxmo = rtP.Out_Y0_iknrubxnzv.Penetration;
+rtB.jcbh5vxpnk = 0.0;
+rtB.lzfy2352uk = 0.0;
+rtB.lonn3kcedl = 0.0;
+rtB.kk2thofaas = 0.0;
+rtB.ehbubsn5th[0] = 0.0;
+rtB.ehbubsn5th[1] = 0.0;
+rtB.ehbubsn5th[2] = 0.0;
+rtB.dqajf0jtxt = rtP.Out_Y0_dsybcinvx0.Penetration;
+rtB.elhdf1edc5 = 0.0;
+rtB.c2wr5yzs5v = 0.0;
+rtB.jd4yjsoqd4 = 0.0;
+rtB.iy23cb54a4 = 0.0;
+rtB.exwjjqgwkx[0] = 0.0;
+rtB.exwjjqgwkx[1] = 0.0;
+rtB.exwjjqgwkx[2] = 0.0;
+rtB.amzzzk24kk = rtP.Out_Y0_cp2appr5ji.Penetration;
+rtB.hbeisbabwx = 0.0;
+rtB.elb0w4tefg = 0.0;
+rtB.d2v3vgiv34 = 0.0;
+rtB.ix3ptmavgs = 0.0;
+rtB.jyhmyvecbe[0] = 0.0;
+rtB.jyhmyvecbe[1] = 0.0;
+rtB.jyhmyvecbe[2] = 0.0;
+rtB.c5qfgaey3x = rtP.Out_Y0_cgekjf10zv.Penetration;
+rtB.hdzxtocmwl = 0.0;
+rtB.akz25gpamg = 0.0;
+rtB.dl2qtjos2a = 0.0;
+rtB.pw0cuzi3d4 = 0.0;
+rtB.e2rpdzrm25[0] = 0.0;
+rtB.e2rpdzrm25[1] = 0.0;
+rtB.e2rpdzrm25[2] = 0.0;
+rtB.pcanethlez = rtP.Out_Y0_la5thb2dsy.Penetration;
+rtB.inkxxysbj1 = 0.0;
+rtB.e2ojqtgvfd = 0.0;
+rtB.lmkipululf = 0.0;
+rtB.pbyxee15pi = 0.0;
+rtB.am511vmfpf[0] = 0.0;
+rtB.am511vmfpf[1] = 0.0;
+rtB.am511vmfpf[2] = 0.0;
+rtB.geyzsialmn = rtP.Out_Y0_icwcrjpba0.Penetration;
+rtB.bqr4tq11ut = 0.0;
+rtB.huzsrppaod = 0.0;
+rtB.enzk15wgwt = 0.0;
+rtB.ofxdu1axpv = 0.0;
+rtB.ne5expyqe4[0] = 0.0;
+rtB.ne5expyqe4[1] = 0.0;
+rtB.ne5expyqe4[2] = 0.0;
+rtB.hgoj3howdt = rtP.Out_Y0_irl3smkrfx.Penetration;
+rtB.chb4wqz0kp = 0.0;
+rtB.hir1qcqyfo = 0.0;
+rtB.p3ikw2jjor = 0.0;
+rtB.pwrxignuui = 0.0;
+rtB.gkdfmkqygr[0] = 0.0;
+rtB.gkdfmkqygr[1] = 0.0;
+rtB.gkdfmkqygr[2] = 0.0;
+rtB.dxymdxmt5y = rtP.Out_Y0_en5lnqzv5d.Penetration;
+rtB.b0celnp3gm = 0.0;
+rtB.h4xmz3ltpy = 0.0;
+rtB.ngvmherj5w = 0.0;
+rtB.knz1d2fu4n = 0.0;
+rtB.cwubll3cvk[0] = 0.0;
+rtB.cwubll3cvk[1] = 0.0;
+rtB.cwubll3cvk[2] = 0.0;
+rtB.ks4pogtmd1 = rtP.Out_Y0_dglxuhfgss.Penetration;
+rtB.o0qryuthna = 0.0;
+rtB.eou5nrekas = 0.0;
+rtB.d05ufjsnlr = 0.0;
+rtB.iec0t00rbi = 0.0;
+rtB.htgzrmg3n4[0] = 0.0;
+rtB.htgzrmg3n4[1] = 0.0;
+rtB.htgzrmg3n4[2] = 0.0;
+rtB.ls25zcqxsw = rtP.Out_Y0_f2cnxweqlm.Penetration;
+rtB.dfum1zbsjt = 0.0;
+rtB.mjc0ksdoks = 0.0;
+rtB.axg1b10m0h = 0.0;
+rtB.ot3pzy0hnf = 0.0;
+rtB.g3jha2luwi[0] = 0.0;
+rtB.g3jha2luwi[1] = 0.0;
+rtB.g3jha2luwi[2] = 0.0;
+rtB.pl00xmf5sz = rtP.Out_Y0_feslwrz4jg.Penetration;
+rtB.kah2aks3rz = 0.0;
+rtB.nbzr5sra5l = 0.0;
+rtB.dbss3ttn0j = 0.0;
+rtB.l1wctlwbzb = 0.0;
+rtB.jqee1cfmvr[0] = 0.0;
+rtB.jqee1cfmvr[1] = 0.0;
+rtB.jqee1cfmvr[2] = 0.0;
+rtB.iz0rr1q5wq = rtP.Out_Y0_grvn2r2lfb.Penetration;
+rtB.cp3tqvi45k = 0.0;
+rtB.cc1y4d4mn2 = 0.0;
+rtB.lw5ga0t4mc = 0.0;
+rtB.grw1ekfcod = 0.0;
+rtB.cfpbolims0[0] = 0.0;
+rtB.cfpbolims0[1] = 0.0;
+rtB.cfpbolims0[2] = 0.0;
+rtB.k4qa0kszo0 = rtP.Out_Y0_nvlmkusz3m.Penetration;
+rtB.dpdv2oixy3 = 0.0;
+rtB.mr53cr2anu = 0.0;
+rtB.gzvk5itrw4 = 0.0;
+rtB.pswggbr0wd = 0.0;
+rtB.gjvf55brck[0] = 0.0;
+rtB.gjvf55brck[1] = 0.0;
+rtB.gjvf55brck[2] = 0.0;
+rtB.pudmqbeur4 = rtP.Out_Y0_e0lcwfz0dl.Penetration;
+rtB.elc20j2gs3 = 0.0;
+rtB.ndvpzafmmf = 0.0;
+rtB.fxofrs2hmn = 0.0;
+rtB.el4kwidheu = 0.0;
+rtB.mzniiuhorc[0] = 0.0;
+rtB.mzniiuhorc[1] = 0.0;
+rtB.mzniiuhorc[2] = 0.0;
+rtB.m05htreo10 = rtP.Out_Y0_nnavxwpq5z.Penetration;
+rtB.k50oqdex3y = 0.0;
+rtB.kjcr1qhf2g = 0.0;
+rtB.m0oau5kqac = 0.0;
+rtB.pkudfwtfvz = 0.0;
+rtB.kinp1drayj[0] = 0.0;
+rtB.kinp1drayj[1] = 0.0;
+rtB.kinp1drayj[2] = 0.0;
+rtB.jc3gveqmlu = rtP.Out_Y0_ctf32jqok2.Penetration;
+rtB.isxrtntafu = 0.0;
+rtB.nkhky4b0hq = 0.0;
+rtB.elmhyl35gx = 0.0;
+rtB.bxgr3izxv1 = 0.0;
+rtB.lstnbe140c[0] = 0.0;
+rtB.lstnbe140c[1] = 0.0;
+rtB.lstnbe140c[2] = 0.0;
+rtB.hujnasxox3 = rtP.Out_Y0_pgulcfetwo.Penetration;
+rtB.kdjrktpasp = 0.0;
+rtB.of4qfzcyfn = 0.0;
+rtB.eas4l1nnba = 0.0;
+rtB.mffawlcg1u = 0.0;
+rtB.fuhnp4y1yo[0] = 0.0;
+rtB.fuhnp4y1yo[1] = 0.0;
+rtB.fuhnp4y1yo[2] = 0.0;
+rtB.cl40ki3xlm = rtP.Out_Y0_g4oo30oywj.Penetration;
+rtB.lu3zyvivbc = 0.0;
+rtB.jktzeqqz44 = 0.0;
+rtB.iwcbnabkie = 0.0;
+rtB.ppjhg2ye1p = 0.0;
+rtB.padqkhv3bg[0] = 0.0;
+rtB.padqkhv3bg[1] = 0.0;
+rtB.padqkhv3bg[2] = 0.0;
+rtB.pqss0uvzf5 = rtP.Out_Y0_htdpgckt0r.Penetration;
+rtB.luhumzn1rv = 0.0;
+rtB.ghs3xu3bet = 0.0;
+rtB.pjtxcsefqn = 0.0;
+rtB.cputrcqyoe = 0.0;
+rtB.cfqxvafxct[0] = 0.0;
+rtB.cfqxvafxct[1] = 0.0;
+rtB.cfqxvafxct[2] = 0.0;
+rtB.jwg03heick = rtP.Out_Y0_fk2gmydoer.Penetration;
+rtB.hpaobutdom = 0.0;
+rtB.eejjq3jfi5 = 0.0;
+rtB.cx00tbwywt = 0.0;
+rtB.nmqnxli3mc = 0.0;
+rtB.nosbgidthr[0] = 0.0;
+rtB.nosbgidthr[1] = 0.0;
+rtB.nosbgidthr[2] = 0.0;
+rtB.ivxapxj4pu = rtP.Out_Y0_ppfrua1fbv.Penetration;
+rtB.mgong53nba = 0.0;
+rtB.l5olk4mn3q = 0.0;
+rtB.nlor5okrwg = 0.0;
+rtB.agrciansl1 = 0.0;
+rtB.cn3u2hjxrj[0] = 0.0;
+rtB.cn3u2hjxrj[1] = 0.0;
+rtB.cn3u2hjxrj[2] = 0.0;
+rtB.i0yohb3v4j = rtP.Out_Y0_bpgrgysop5.Penetration;
+rtB.pulhij1xgj = 0.0;
+rtB.h3yhtebt1x = 0.0;
+rtB.gv0nbt1kdl = 0.0;
+rtB.honqy1gqmz = 0.0;
+rtB.bbubgu5kfw[0] = 0.0;
+rtB.bbubgu5kfw[1] = 0.0;
+rtB.bbubgu5kfw[2] = 0.0;
+rtB.oyzelftf4y = rtP.Out_Y0_pqu3xklbb5.Penetration;
+rtB.lxtw3zy5k2 = 0.0;
+rtB.i0coo3c0jr = 0.0;
+rtB.kigbbrpl3i = 0.0;
+rtB.c5kihdyiui = 0.0;
+rtB.gnxmqabj5f[0] = 0.0;
+rtB.gnxmqabj5f[1] = 0.0;
+rtB.gnxmqabj5f[2] = 0.0;
+rtB.ewujfcqgcp = rtP.Out_Y0_jjnahdd3lb.Penetration;
+rtB.myjgrbghgh = 0.0;
+rtB.bi1sbnufau = 0.0;
+rtB.bd3i41axe5 = 0.0;
+rtB.iercqsyucx = 0.0;
+rtB.ihvwkne2zr[0] = 0.0;
+rtB.ihvwkne2zr[1] = 0.0;
+rtB.ihvwkne2zr[2] = 0.0;
+rtB.pdyw051bhh = rtP.Out_Y0_nm1tamobvs.Penetration;
+rtB.klezuyxv3h = 0.0;
+rtB.g52jjdislj = 0.0;
+rtB.bso5rmf0i5 = 0.0;
+rtB.bolo0mnawx = 0.0;
+rtB.kadik4atnt[0] = 0.0;
+rtB.kadik4atnt[1] = 0.0;
+rtB.kadik4atnt[2] = 0.0;
+rtB.eqtqjxfwuo = rtP.Out_Y0_nc2m5nu4tk.Penetration;
+rtB.mdr2mpc3vz = 0.0;
+rtB.e51r5gcqln = 0.0;
+rtB.gp1h4agsbi = 0.0;
+rtB.jx35t0xlc0 = 0.0;
+rtB.lb1qcum2kt[0] = 0.0;
+rtB.lb1qcum2kt[1] = 0.0;
+rtB.lb1qcum2kt[2] = 0.0;
+for (i = 0; i < 12; i++) {
+    rtB.olf4p0wx2r[i] = rtP.Merge_InitialOutput;
+    rtB.jks35gaarl[i] = rtP.Merge_InitialOutput_b55uwc2er4;
+    rtB.e2che204v5[i] = rtP.Merge_InitialOutput_jj32pdpg3z;
+    rtB.ftwa5qxodt[i] = rtP.Merge_InitialOutput_mp0d3xgmgi;
+    rtB.jxs5d1s1pr[i] = rtP.Merge_InitialOutput_d3bcxvlzxm;
+    rtB.o5ups0ole2[i] = rtP.Merge_InitialOutput_bzvu4bjoua;
+    rtB.epuf5gf5dg[i] = rtP.Merge_InitialOutput_gkvbwqk2ut;
+    rtB.dz5lo4mvbw[i] = rtP.Merge_InitialOutput_po1ni5x4na;
+    rtB.n2kxerelv1[i] = rtP.Merge_InitialOutput_fpx4b35vnd;
+    rtB.fqeml5kgkh[i] = rtP.Merge_InitialOutput_ikntdu3pyl;
+    rtB.dqf1xnicpj[i] = rtP.Merge_InitialOutput_m4zvucnc45;
+    rtB.p1l0dexxrv[i] = rtP.Merge_InitialOutput_i0dkr0bpn4;
+    rtB.km50y404j5[i] = rtP.Merge_InitialOutput_pernspbsvl;
+    rtB.lzmb423g3p[i] = rtP.Merge_InitialOutput_kej35am5ld;
+    rtB.obav31bysp[i] = rtP.Merge_InitialOutput_fbdpgmzz0h;
+    rtB.j5zmq1mz2s[i] = rtP.Merge_InitialOutput_nb1uzmvqco;
+    rtB.frut12yssp[i] = rtP.Merge_InitialOutput_jblvm00pla;
+    rtB.ha2knsbzmp[i] = rtP.Merge_InitialOutput_grhfvjm5pd;
+    rtB.pfr0psl13s[i] = rtP.Merge_InitialOutput_c3zdv1rpen;
+    rtB.fill04l4rr[i] = rtP.Merge_InitialOutput_e01r2j4xg2;
+    rtB.hpw4pxwaa0[i] = rtP.Merge_InitialOutput_pfjetybcbw;
+    rtB.io0kuohg24[i] = rtP.Merge_InitialOutput_lqv3bovq4l;
+    rtB.jx4b00hyqi[i] = rtP.Merge_InitialOutput_gkhazpcsil;
+    rtB.hukq203php[i] = rtP.Merge_InitialOutput_ozhudej4rb;
+    rtB.lv1hlpw1s0[i] = rtP.Merge_InitialOutput_neo2lg1ypv;
+    rtB.dz4mxqxndf[i] = rtP.Merge_InitialOutput_gitkmt14eo;
+    rtB.lljqza3vc5[i] = rtP.Merge_InitialOutput_nkhfc0mugk;
+    rtB.bo32pgjext[i] = rtP.Merge_InitialOutput_ba3zzq0yha;
+    rtB.bff02qmrtj[i] = rtP.Merge_InitialOutput_ew23tivi5s;
+    rtB.fwescjrybh[i] = rtP.Merge_InitialOutput_oxnbobd1bg;
+    rtB.iwlj5r2q13[i] = rtP.Merge_InitialOutput_klu513u1xd;
+    rtB.eygqbupyh3[i] = rtP.Merge_InitialOutput_bgxsvnzxh5;
+    rtB.pg4cv1bisl[i] = rtP.Merge_InitialOutput_aztvnvychq;
+    rtB.gmamqxu2ia[i] = rtP.Merge_InitialOutput_jgyja022up;
+    rtB.cpljox0can[i] = rtP.Merge_InitialOutput_p42iup222c;
+    rtB.lw4bus3hp4[i] = rtP.Merge_InitialOutput_oehf0qbhds;
+    rtB.jpy02urcxd[i] = rtP.Merge_InitialOutput_hcbqlthbyn;
+    rtB.gke34jkmup[i] = rtP.Merge_InitialOutput_pavtiqxwld;
+    rtB.jxqudpomzo[i] = rtP.Merge_InitialOutput_jprzm1e3jb;
+    rtB.ckvaixhi2v[i] = rtP.Merge_InitialOutput_js3y053yju;
+    rtB.bmrrol5hm1[i] = rtP.Merge_InitialOutput_a5jp3exo5x;
+    rtB.jsmorzf5uw[i] = rtP.Merge_InitialOutput_ntfoy5jrvs;
+    rtB.ojm0nohczu[i] = rtP.Merge_InitialOutput_jeh1ywupfu;
+    rtB.afpxjhwand[i] = rtP.Merge_InitialOutput_icj32cegaq;
+    rtB.i0yv3jdjbq[i] = rtP.Merge_InitialOutput_czibmhocrk;
+    rtB.mwsoicwutj[i] = rtP.Merge_InitialOutput_l43kmmppbq;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.gormj0u13k", "&rtP.gormj0u13k"], 64, 16, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.cbwgbu3vby[i] = rtP.Merge_InitialOutput_kouq01efbb;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.i2nob4k5vf", "&rtP.i2nob4k5vf"], 64, 17, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.m2zy1np4oi[i] = rtP.Merge_InitialOutput_b0odr03x4i;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.cp45zsb124", "&rtP.cp45zsb124"], 64, 18, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.att0ujt0y0[i] = rtP.Merge_InitialOutput_nj4yjbviku;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.monwszxfaj", "&rtP.monwszxfaj"], 64, 19, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.k2smsv0rni[i] = rtP.Merge_InitialOutput_jpqqpexgmf;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.mknieh24qv", "&rtP.mknieh24qv"], 64, 12, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.harjsvikd0[i] = rtP.Merge_InitialOutput_k3fr0cbbzu;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.hdpzcz3lzv", "&rtP.hdpzcz3lzv"], 64, 13, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.gohq0seqfp[i] = rtP.Merge_InitialOutput_neoop4bfuc;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.lllydn3o3h", "&rtP.lllydn3o3h"], 64, 14, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.m1gqywbhjw[i] = rtP.Merge_InitialOutput_g4zzasrbyc;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.lme11mqlhk", "&rtP.lme11mqlhk"], 64, 15, 4, 0, 4, 133)>\
+
+%endif
+rtB.eef3yvksad = rtP.Out_Y0_ntbcjq1jqp.Penetration;
+rtB.ccbanmjkom = 0.0;
+rtB.nvmmqkj2jl = 0.0;
+rtB.dwn2zhzlpy = 0.0;
+rtB.athxvrbhuo = 0.0;
+rtB.jhom5lklet[0] = 0.0;
+rtB.jhom5lklet[1] = 0.0;
+rtB.jhom5lklet[2] = 0.0;
+rtB.bqoq2chs3t = rtP.Out_Y0_ef5knd3a0z.Penetration;
+rtB.md0qky4uve = 0.0;
+rtB.asgwsopfhx = 0.0;
+rtB.cc0dzksvgo = 0.0;
+rtB.p0dcw1qmcj = 0.0;
+rtB.jcz5ucge5j[0] = 0.0;
+rtB.jcz5ucge5j[1] = 0.0;
+rtB.jcz5ucge5j[2] = 0.0;
+rtB.o4iqiwo350 = rtP.Out_Y0_gupex1qy20.Penetration;
+rtB.ilydzpzppx = 0.0;
+rtB.gwpfdfw1et = 0.0;
+rtB.dflbgu0tp1 = 0.0;
+rtB.aubj0jizxv = 0.0;
+rtB.lqgogfxtsk[0] = 0.0;
+rtB.lqgogfxtsk[1] = 0.0;
+rtB.lqgogfxtsk[2] = 0.0;
+rtB.n0h3vnfn1v = rtP.Out_Y0_cqutxfudqe.Penetration;
+rtB.obwsiagvll = 0.0;
+rtB.lbs41ygpbq = 0.0;
+rtB.lujmnhzq3k = 0.0;
+rtB.liejcyx2ee = 0.0;
+rtB.gilx3onwnz[0] = 0.0;
+rtB.gilx3onwnz[1] = 0.0;
+rtB.gilx3onwnz[2] = 0.0;
+rtB.fli4ujtkfq = rtP.Out_Y0_il0rzfmdri.Penetration;
+rtB.l4pem13gdm = 0.0;
+rtB.bjhoznucfb = 0.0;
+rtB.dbj1w5yuff = 0.0;
+rtB.iii5dg05om = 0.0;
+rtB.ikxvf5b3nq[0] = 0.0;
+rtB.ikxvf5b3nq[1] = 0.0;
+rtB.ikxvf5b3nq[2] = 0.0;
+rtB.obies1v1j3 = rtP.Out_Y0_f4vsj00c0j.Penetration;
+rtB.jahlfgjkf3 = 0.0;
+rtB.h0zem0yilx = 0.0;
+rtB.lvacofwz45 = 0.0;
+rtB.labixve20z = 0.0;
+rtB.bjnwd4y5ql[0] = 0.0;
+rtB.bjnwd4y5ql[1] = 0.0;
+rtB.bjnwd4y5ql[2] = 0.0;
+for (i = 0; i < 12; i++) {
+    rtB.ju0sord3zt[i] = rtP.Merge_InitialOutput_jwselqxya5;
+    rtB.efym50w5j5[i] = rtP.Merge_InitialOutput_bieeegkp3e;
+    rtB.jouvrnkkzn[i] = rtP.Merge_InitialOutput_cobsxbisby;
+    rtB.g42a1hekb0[i] = rtP.Merge_InitialOutput_lcwhfiyfn4;
+    rtB.bulvwyx1pk[i] = rtP.Merge_InitialOutput_b1vlfgqzik;
+    rtB.csocoer2hs[i] = rtP.Merge_InitialOutput_axjp3j0ozz;
+    rtB.pxror2vpbe[i] = rtP.Merge_InitialOutput_hyrgkuduuo;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.bo4dcbamkm", "&rtP.bo4dcbamkm"], 64, 8, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.n2ukxrbov2[i] = rtP.Merge_InitialOutput_exossycl0e;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.ooxyjyu5fe", "&rtP.ooxyjyu5fe"], 64, 9, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.glprrh5ka5[i] = rtP.Merge_InitialOutput_obvao2134i;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.bf5hi5wpce", "&rtP.bf5hi5wpce"], 64, 10, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.glxpe5sffw[i] = rtP.Merge_InitialOutput_dvuwop5la2;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.nrdlagit2x", "&rtP.nrdlagit2x"], 64, 11, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.pr5j2fiybs[i] = rtP.Merge_InitialOutput_hllgvfm5br;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.bexjktaoea", "&rtP.bexjktaoea"], 64, 4, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.kpfwx2giz5[i] = rtP.Merge_InitialOutput_em00kdlyf4;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.lqw5nwnnjd", "&rtP.lqw5nwnnjd"], 64, 5, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.byozwhqec4[i] = rtP.Merge_InitialOutput_l1wb1lejo1;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.pteusy0lth", "&rtP.pteusy0lth"], 64, 6, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.l52iyn3djp[i] = rtP.Merge_InitialOutput_hgbo0tapoe;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.hix4nmzvmo", "&rtP.hix4nmzvmo"], 64, 7, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.kjpjhzkyfk[i] = rtP.Merge_InitialOutput_mxks5tprmy;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.nlywbnsue4l", "&rtP.nlywbnsue4l"], 64, 0, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.ds2ljd3tx0[i] = rtP.Merge_InitialOutput_hnhq0iyhyd;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.koy40z5g45", "&rtP.koy40z5g45"], 64, 1, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.fkl2co0iwl[i] = rtP.Merge_InitialOutput_cnsotbgutc;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.jkc1iqursw", "&rtP.jkc1iqursw"], 64, 2, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.g252qkkdzx[i] = rtP.Merge_InitialOutput_kpvrrk1mj5;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.kcqny1hcou", "&rtP.kcqny1hcou"], 64, 3, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.mbfgnahja2[i] = rtP.Merge_InitialOutput_e4myxrgltg;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.o1nhalkyj1", "&rtP.o1nhalkyj1"], 64, 20, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.jdd3sq44jf[i] = rtP.Merge_InitialOutput_onst2hj1x5;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.njy4ou3xtp", "&rtP.njy4ou3xtp"], 64, 21, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.inoxbbutxa[i] = rtP.Merge_InitialOutput_m2rykvpg4n;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.or1mfpmav0", "&rtP.or1mfpmav0"], 64, 22, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.delaelcrst[i] = rtP.Merge_InitialOutput_hgphak0psf;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.jfianglajh", "&rtP.jfianglajh"], 64, 23, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.hoycahivdx[i] = rtP.Merge_InitialOutput_c5peyr5am4;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.nelc3hrprh", "&rtP.nelc3hrprh"], 64, 24, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.kjg2bf1buk[i] = rtP.Merge_InitialOutput_k1emcbwldw;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.owioi2gire", "&rtP.owioi2gire"], 64, 25, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.b0nfm0dhhe[i] = rtP.Merge_InitialOutput_eafnlavthe;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.arrnbkhd0o", "&rtP.arrnbkhd0o"], 64, 26, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.fnqo0dosxt[i] = rtP.Merge_InitialOutput_hwt1yue0pb;
+}
+%if !SLibCGSysFcnIsEmptyForTid(CompiledModel.System[64], "SystemInitialize",0)
+%if SLibCG_SystemFcnArgAccessed("pivh5e1d1k",64,0)
+%assign _modelSS = RTMGetModelSSFromIR()
+%endif
+
+%<SLibCGIRGenReusableSysCall("pivh5e1d1k", ["%<_modelSS>", "&rtB.pcendk412i", "&rtP.pcendk412i"], 64, 27, 4, 0, 4, 133)>\
+
+%endif
+for (i = 0; i < 12; i++) {
+    rtB.cx3pd4owfn[i] = rtP.Merge_InitialOutput_klj2uwmzfa;
+}
+%<SLibInsertInitPeriodicCStatesFcn(system)>
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedSystemInitializeLocalVars", localVarDecl)>
+%endfunction
+%function SystemInitializeFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void SystemInitialize(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 2, fcnProtoType)>
+%endfunction

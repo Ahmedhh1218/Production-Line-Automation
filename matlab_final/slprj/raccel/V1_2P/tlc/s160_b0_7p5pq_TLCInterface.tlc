@@ -1,0 +1,562 @@
+%implements s160_b0_7p5pq_TLCInterface "C"
+
+%function getOutputAddr_133_8_1_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtB.o03hhjv2v5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_133_8_1_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtB.o03hhjv2v5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_8_1_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.orgfo3xdx4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_8_1_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.orgfo3xdx4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_8_1_1_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.fkkjduugbi"
+%endfunction
+
+%function getDWork_133_8_1_1_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.fkkjduugbi"
+%endfunction
+
+%function getDWorkAddr_133_8_1_1_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.htiwltzq03"
+%endfunction
+
+%function getDWork_133_8_1_1_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.htiwltzq03"
+%endfunction
+
+%function getDWorkAddr_133_8_1_1_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.el3wu2q230" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_8_1_1_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.el3wu2q230" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_133_8_1_1_0_1_946(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Time0"
+%endfunction
+
+%function getParam_133_8_1_1_0_1_946(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Time0"
+%endfunction
+
+%function getParamAddr_133_8_1_1_0_1_947(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Data0"
+%endfunction
+
+%function getParam_133_8_1_1_0_1_947(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Data0"
+%endfunction
+
+%function getOutputAddr_133_1885_1_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtB.jedq4lp5cr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_133_1885_1_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtB.jedq4lp5cr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_1885_1_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.b2kfwpvdtu" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_1885_1_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.b2kfwpvdtu" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_1885_1_1_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.gh1urgb5wf"
+%endfunction
+
+%function getDWork_133_1885_1_1_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.gh1urgb5wf"
+%endfunction
+
+%function getDWorkAddr_133_1885_1_1_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.lqh4caknit"
+%endfunction
+
+%function getDWork_133_1885_1_1_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.lqh4caknit"
+%endfunction
+
+%function getDWorkAddr_133_1885_1_1_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.nay2rlhrdj" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_1885_1_1_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.nay2rlhrdj" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_133_1885_1_1_1_1_1188(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Time0_fum5i5ndw4"
+%endfunction
+
+%function getParam_133_1885_1_1_1_1_1188(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Time0_fum5i5ndw4"
+%endfunction
+
+%function getParamAddr_133_1885_1_1_1_1_1189(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Data0_m40zvhhdhj"
+%endfunction
+
+%function getParam_133_1885_1_1_1_1_1189(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Data0_m40zvhhdhj"
+%endfunction
+
+%function getOutputAddr_133_8_1_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtB.o03hhjv2v5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_133_8_1_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtB.o03hhjv2v5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_8_1_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.orgfo3xdx4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_8_1_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.orgfo3xdx4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_8_1_3_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.fkkjduugbi"
+%endfunction
+
+%function getDWork_133_8_1_3_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.fkkjduugbi"
+%endfunction
+
+%function getDWorkAddr_133_8_1_3_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.htiwltzq03"
+%endfunction
+
+%function getDWork_133_8_1_3_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.htiwltzq03"
+%endfunction
+
+%function getDWorkAddr_133_8_1_3_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.el3wu2q230" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_8_1_3_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.el3wu2q230" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_133_8_1_3_0_1_946(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Time0"
+%endfunction
+
+%function getParam_133_8_1_3_0_1_946(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Time0"
+%endfunction
+
+%function getParamAddr_133_8_1_3_0_1_947(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Data0"
+%endfunction
+
+%function getParam_133_8_1_3_0_1_947(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Data0"
+%endfunction
+
+%function getOutputAddr_133_1885_1_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtB.jedq4lp5cr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_133_1885_1_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtB.jedq4lp5cr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_1885_1_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.b2kfwpvdtu" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_1885_1_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.b2kfwpvdtu" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_1885_1_3_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.gh1urgb5wf"
+%endfunction
+
+%function getDWork_133_1885_1_3_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.gh1urgb5wf"
+%endfunction
+
+%function getDWorkAddr_133_1885_1_3_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.lqh4caknit"
+%endfunction
+
+%function getDWork_133_1885_1_3_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.lqh4caknit"
+%endfunction
+
+%function getDWorkAddr_133_1885_1_3_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.nay2rlhrdj" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_1885_1_3_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.nay2rlhrdj" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_133_1885_1_3_1_1_1188(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Time0_fum5i5ndw4"
+%endfunction
+
+%function getParam_133_1885_1_3_1_1_1188(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Time0_fum5i5ndw4"
+%endfunction
+
+%function getParamAddr_133_1885_1_3_1_1_1189(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Data0_m40zvhhdhj"
+%endfunction
+
+%function getParam_133_1885_1_3_1_1_1189(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Data0_m40zvhhdhj"
+%endfunction
+
+%function getOutputAddr_133_8_1_8_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtB.o03hhjv2v5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_133_8_1_8_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtB.o03hhjv2v5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_8_1_8_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.orgfo3xdx4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_8_1_8_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.orgfo3xdx4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_8_1_8_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.fkkjduugbi"
+%endfunction
+
+%function getDWork_133_8_1_8_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.fkkjduugbi"
+%endfunction
+
+%function getDWorkAddr_133_8_1_8_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.htiwltzq03"
+%endfunction
+
+%function getDWork_133_8_1_8_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.htiwltzq03"
+%endfunction
+
+%function getDWorkAddr_133_8_1_8_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.el3wu2q230" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_8_1_8_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.el3wu2q230" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_133_8_1_8_0_1_946(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Time0"
+%endfunction
+
+%function getParam_133_8_1_8_0_1_946(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Time0"
+%endfunction
+
+%function getParamAddr_133_8_1_8_0_1_947(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Data0"
+%endfunction
+
+%function getParam_133_8_1_8_0_1_947(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Data0"
+%endfunction
+
+%function getOutputAddr_133_1885_1_8_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtB.jedq4lp5cr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_133_1885_1_8_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtB.jedq4lp5cr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_1885_1_8_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.b2kfwpvdtu" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_1885_1_8_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.b2kfwpvdtu" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_1885_1_8_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.gh1urgb5wf"
+%endfunction
+
+%function getDWork_133_1885_1_8_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.gh1urgb5wf"
+%endfunction
+
+%function getDWorkAddr_133_1885_1_8_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.lqh4caknit"
+%endfunction
+
+%function getDWork_133_1885_1_8_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.lqh4caknit"
+%endfunction
+
+%function getDWorkAddr_133_1885_1_8_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.nay2rlhrdj" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_1885_1_8_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.nay2rlhrdj" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_133_1885_1_8_1_1_1188(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Time0_fum5i5ndw4"
+%endfunction
+
+%function getParam_133_1885_1_8_1_1_1188(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Time0_fum5i5ndw4"
+%endfunction
+
+%function getParamAddr_133_1885_1_8_1_1_1189(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Data0_m40zvhhdhj"
+%endfunction
+
+%function getParam_133_1885_1_8_1_1_1189(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Data0_m40zvhhdhj"
+%endfunction
+
+%function getOutputAddr_133_8_1_9_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtB.o03hhjv2v5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_133_8_1_9_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtB.o03hhjv2v5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_8_1_9_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.orgfo3xdx4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_8_1_9_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.orgfo3xdx4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_8_1_9_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.fkkjduugbi"
+%endfunction
+
+%function getDWork_133_8_1_9_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.fkkjduugbi"
+%endfunction
+
+%function getDWorkAddr_133_8_1_9_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.htiwltzq03"
+%endfunction
+
+%function getDWork_133_8_1_9_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.htiwltzq03"
+%endfunction
+
+%function getDWorkAddr_133_8_1_9_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.el3wu2q230" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_8_1_9_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.el3wu2q230" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_133_8_1_9_0_1_946(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Time0"
+%endfunction
+
+%function getParam_133_8_1_9_0_1_946(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Time0"
+%endfunction
+
+%function getParamAddr_133_8_1_9_0_1_947(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Data0"
+%endfunction
+
+%function getParam_133_8_1_9_0_1_947(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Data0"
+%endfunction
+
+%function getOutputAddr_133_1885_1_9_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtB.jedq4lp5cr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_133_1885_1_9_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtB.jedq4lp5cr" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_1885_1_9_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.b2kfwpvdtu" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_1885_1_9_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.b2kfwpvdtu" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_133_1885_1_9_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.gh1urgb5wf"
+%endfunction
+
+%function getDWork_133_1885_1_9_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.gh1urgb5wf"
+%endfunction
+
+%function getDWorkAddr_133_1885_1_9_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.lqh4caknit"
+%endfunction
+
+%function getDWork_133_1885_1_9_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.lqh4caknit"
+%endfunction
+
+%function getDWorkAddr_133_1885_1_9_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtDW.nay2rlhrdj" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_133_1885_1_9_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtDW.nay2rlhrdj" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_133_1885_1_9_1_1_1188(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Time0_fum5i5ndw4"
+%endfunction
+
+%function getParam_133_1885_1_9_1_1_1188(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Time0_fum5i5ndw4"
+%endfunction
+
+%function getParamAddr_133_1885_1_9_1_1_1189(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&rtP.FromWs_Data0_m40zvhhdhj"
+%endfunction
+
+%function getParam_133_1885_1_9_1_1_1189(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "rtP.FromWs_Data0_m40zvhhdhj"
+%endfunction
+
