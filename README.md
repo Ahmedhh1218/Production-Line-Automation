@@ -21,3 +21,6 @@ ProductionLineAutomation is a comprehensive repository dedicated to streamlining
 3. Run the MATLAB simulations in the `/simulations` directory to validate the integrated processes.
 4. Analyze stress reports and actuator sizing calculations in the `/analysis` directory.
 5. Explore the `/programming` directory for the RTOS-based programming and microcontroller communication code.
+
+## Final Video Link
+- https://youtu.be/SBfbZ8qiyrk
